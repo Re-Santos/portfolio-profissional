@@ -14,9 +14,9 @@ const Contact = () => {
         <a href="https://www.linkedin.com/in/s-renata-santos/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
           <img src={linkedinLogo} alt="LinkedIn" style={{ width: '60px', height: '60px' }} />
         </a>
-        <a href="mailto:renatasantos.dev@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+        {/* <a href="mailto:renatasantos.dev@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
           <img src={emailLogo} alt="Email" style={{ width: '60px', height: '60px' }} />
-        </a>
+        </a> */}
       </div>
     </section>
   );

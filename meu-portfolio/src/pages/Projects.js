@@ -22,7 +22,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="bg-purple-200 p-8">
+    <section id="projects" className="bg-pink-200 p-8">
       <h2 className="text-3xl font-bold text-center">Projetos</h2>
       <div className="flex flex-wrap justify-center">
         {projects.map(project => (

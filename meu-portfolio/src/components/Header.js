@@ -27,6 +27,7 @@ const Header = () => {
           <ul className="flex">
             <li className="mx-4"><Link to="home" smooth={true} duration={500} className="text-xl hover:text-blue-700">Home</Link></li>
             <li className="mx-4"><Link to="about" smooth={true} duration={500} className="text-xl hover:text-blue-700">Sobre Mim</Link></li>
+            <li className="mx-4"><Link to="skills" smooth={true} duration={500} className="text-xl hover:text-blue-700">Habilidades</Link></li>
             <li className="mx-4"><Link to="projects" smooth={true} duration={500} className="text-xl hover:text-blue-700">Projetos</Link></li>
             <li className="mx-4"><Link to="contact" smooth={true} duration={500} className="text-xl hover:text-blue-700">Contato</Link></li>
           </ul>

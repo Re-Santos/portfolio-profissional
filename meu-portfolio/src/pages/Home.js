@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import avatar from '../assets/avatar.jpg'; 
+import avatar from '../assets/avatar5.jpg'; 
 
 const words = ["Desenvolvedora Front-end", "Desenvolvedora Web"];
 let i = 0;
