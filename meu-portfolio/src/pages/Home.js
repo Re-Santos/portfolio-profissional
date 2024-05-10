@@ -1,31 +1,72 @@
-import React from 'react';
-import ProjectCard from '../components/ProjectCard';
+import React, { useEffect } from 'react';
+import avatar from '../assets/avatar5.jpg'; 
+
+const words = ["Desenvolvedora Front-end", "Desenvolvedora Web"];
+let i = 0;
+let timer;
+
+function typeWriter(element) {
+  let txt = words[i].split("");
+  let loopTyping = function() {
+    if (txt.length > 0) {
+      element.innerHTML += txt.shift();
+    } else {
+      setTimeout(() => deleteText(element), 1000);
+      return false;
+    }
+    timer = setTimeout(loopTyping, 150);
+  };
+  loopTyping();
+}
+
+function deleteText(element) {
+  let txt = element.innerHTML;
+  let loopDeleting = function() {
+    if (txt.length > 0) {
+      txt = txt.split("");
+      txt.pop();
+      txt = txt.join("");
+      element.innerHTML = txt;
+      timer = setTimeout(loopDeleting, 50);
+    } else {
+      i = (i + 1) % words.length;
+      typeWriter(element);
+      return false;
+    }
+  };
+  loopDeleting();
+}
 
 const Home = () => {
-  const projects = [
-    {
-      title: "Projeto 1",
-      description: "Descrição do Projeto 1.",
-      imageUrl: "/path_to_image"
-    },
-
-  ];
+  useEffect(() => {
+    const element = document.querySelector('.typing');
+    if (element) {
+      typeWriter(element);
+    }
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
 
   return (
-    <main className="p-4">
-      <section className="mb-8">
-        <h1 className="text-3xl font-bold text-center my-8 animate-pulse">Bem-vindo ao Meu Portfólio</h1>
-        <p className="text-gray-600 text-lg">Explore meu trabalho e projetos que ilustram minha experiência e dedicação no campo do desenvolvimento web.</p>
-      </section>
-      <section>
-        <h2 className="text-2xl font-bold text-center my-6">Projetos Destacados</h2>
-        <div className="flex flex-wrap justify-center">
-          {projects.map(project => (
-            <ProjectCard key={project.title} {...project} />
-          ))}
-        </div>
-      </section>
-    </main>
+    <section id="home" className="flex h-screen relative">
+      <div className="w-1/2 flex flex-col justify-center items-center bg-blue-500 text-center p-4">
+        <h1 className="text-4xl font-bold text-white">Bem-vindo(a)<br/>ao Meu Portfólio</h1>
+      </div>
+      <div className="w-1/2 flex flex-col justify-center items-center bg-purple-500 text-center p-4">
+        <h2 className="text-4xl font-bold">Eu sou<br /><span className="typing"></span></h2>
+      </div>
+      <img src={avatar} alt="Avatar" style={{
+        position: 'absolute',
+        left: '50%',
+        top: '30%',
+        transform: 'translate(-50%, -50%)',
+        width: '200px',
+        height: '200px',
+        borderRadius: '8px', 
+        boxShadow: '0 4px 8px rgba(0,0,0,0.5)'  
+      }} />
+    </section>
   );
 };
 
