@@ -51,7 +51,12 @@ const Home = () => {
   return (
     <section id="home" className="flex h-screen relative">
       <div className="w-1/2 flex flex-col justify-center items-center bg-blue-500 text-center p-4">
-        <h1 className="text-4xl font-bold text-white">Bem-vindo(a)<br/>ao Meu Portfólio</h1>
+        <h1 className="text-4xl font-bold text-white">Bem-vindo(a)<br/>ao Meu Portfólio 
+        <br/> 
+        <br/> 
+        <span className="wave-hand">👋</span>
+        </h1>
+        {/* Bem-vindo(a) ao Meu Portfólio <span className="wave-hand">👋</span> */}
       </div>
       <div className="w-1/2 flex flex-col justify-center items-center bg-purple-500 text-center p-4">
         <h2 className="text-4xl font-bold">Eu sou<br /><span className="typing"></span></h2>

@@ -1,7 +1,7 @@
 import React from 'react';
 import whatsappLogo from '../assets/whats-logo.png'; 
 import linkedinLogo from '../assets/linkedin.png'; 
-import emailLogo from '../assets/email.png';
+// import emailLogo from '../assets/email.png';
 
 const Contact = () => {
   return (
