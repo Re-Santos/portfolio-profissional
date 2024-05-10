@@ -18,7 +18,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-10 ${navbar ? 'bg-white' : 'bg-transparent'} shadow-md transition duration-300 ease-in-out`}>
+    <header className={`fixed top-0 w-full z-10 ${navbar ? 'bg-gradient-to-r from-blue-500 to-purple-500' : 'bg-transparent'} shadow-md transition duration-300 ease-in-out`}>
       <div className="container mx-auto flex justify-between items-center p-5">
         <div className="font-bold text-xl" style={{ background: 'linear-gradient(to right, #4facfe 0%, #00f2fe 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', transition: 'transform 0.3s ease' }}>
           Renata Santos
