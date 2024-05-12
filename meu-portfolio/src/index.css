@@ -12,6 +12,16 @@
   animation: fadeIn 1s ease-out;
 }
 
+* {
+  box-sizing: border-box; /* Garante que padding e border estão dentro da largura/altura do elemento */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Esconde qualquer coisa que exceda a largura da viewport */
+}
+
 body {
   font-family: 'Inter', sans-serif; 
 }
@@ -50,3 +60,96 @@ body {
   display: inline-block;
   animation: waveAnimation 2s ease-in-out infinite;
 }
+
+/* Estilos específicos para dispositivos com largura máxima de 768px (tablets e smartphones) */
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espaçamento entre os botões na versão desktop */
+}
+
+@media (max-width: 768px) {
+  body {
+      background: #e2e2e2;
+      overflow-x: hidden;  /* Impede o scroll horizontal em toda a página */
+  }
+
+  header, footer {
+      padding: 0.5rem;
+  }
+
+  main {
+      padding: 0.5rem;
+  }
+}
+
+/* Estilos específicos para dispositivos com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+  header, footer {
+      font-size: 0.8rem;
+  }
+
+  main {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+      display: none;
+      width: 100%;
+      text-align: center;
+  }
+
+  .nav.open {
+      display: block;
+  }
+
+  .menu-button {
+      display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column; /* Organiza os botões verticalmente */
+  }
+
+  .button {
+    width: 80%; /* Ajusta a largura para melhor adequação em telas menores */
+    margin: 0 auto; /* Centraliza os botões */
+  }
+
+  #home {
+    flex-direction: column;  /* Empilha os blocos verticalmente */
+    height: auto;            /* Ajusta a altura automaticamente conforme o conteúdo */
+  }
+
+  #home div {
+    width: 100%;             /* Utiliza toda a largura disponível */
+    padding: 20px 10px;      /* Adiciona um espaçamento vertical e um pouco horizontal */
+    text-align: center;      /* Centraliza o texto para evitar problemas de alinhamento */
+  }
+
+  #home .text-4xl {
+    font-size: 25px;         /* Reduz o tamanho da fonte para ajustar no mobile */
+    word-wrap: break-word;   /* Quebra palavras que são muito longas para a linha */
+  }
+
+  #home img {
+    width: 85px !important;           /* Reduz o tamanho do avatar para dispositivos móveis */
+    height: 85px !important;          /* Mantém a proporção do avatar */
+    position: static;        /* Remove o posicionamento absoluto */
+    margin: 20px auto;       /* Centraliza e adiciona margem ao redor do avatar */
+    transform: none;         /* Remove transformação aplicada na versão desktop */
+  }
+
+  #home h1 {
+    margin-top: 30%;
+  }
+
+}
+
+

@@ -41,9 +41,9 @@ const About = () => {
         <p className="text-justify mt-2 max-w-2xl">
           Com formação em Administração e especialização em Coaching e Carreira, migrei para a tecnologia após descobrir minha paixão pelo desenvolvimento web enquanto empreendia em uma loja virtual. Minha jornada inclui trabalhos autônomos e colaborações em projetos desafiadores que expandem continuamente meu conjunto de habilidades em HTML, CSS, JavaScript, React, e mais.
         </p>
-        <div className="mt-4">
-          <a href={cv} download className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Baixar Currículo</a>
-          <a href="https://github.com/Re-Santos" target="_blank" rel="noopener noreferrer" className="ml-4 bg-purple-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">GitHub</a>
+        <div className="mt-4 button-container">
+          <a href={cv} download className=" button bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Baixar Currículo</a>
+          <a href="https://github.com/Re-Santos" target="_blank" rel="noopener noreferrer" className=" button ml-4 bg-purple-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">GitHub</a>
         </div>
       </div>
       {/* Divisória visual */}
