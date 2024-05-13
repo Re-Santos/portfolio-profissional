@@ -4,7 +4,7 @@ Bem-vinda ao repositório do meu portfólio como Desenvolvedora Front-End. Este 
 
 ## 🚀 Deploy
 
-O deploy deste projeto foi realizado no Render. Você pode acessar o site através deste link: [Clique aqui para acessar](https://meuportfolio-render.com)
+O deploy deste projeto foi realizado no Surge. Você pode acessar o site através deste link: [Clique aqui para acessar](https://portfoliorenatasantos.surge.sh)
 
 ## 📖 Descrição
 
@@ -26,10 +26,5 @@ Este portfólio digital inclui informações sobre minha carreira, habilidades t
 - **Projetos**: Demonstração de projetos realizados com links para GitHub e deploy quando aplicável.
 - **Contato**: Formulário para contato e links para redes sociais e profissionais.
 
-## 📋 Como Executar o Projeto
-
-Para executar o portfólio localmente, siga estas etapas:
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Re-Santos/portfolio-profissional.git
+Feito com 💖 por Renata Santos. Entre em contato!</br>
+https://www.linkedin.com/in/s-renata-santos/
