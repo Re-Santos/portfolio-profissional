@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.104c23b0.css",
-    "main.js": "/static/js/main.ca5e39f3.js",
-    "static/js/453.66c5279e.chunk.js": "/static/js/453.66c5279e.chunk.js",
-    "static/media/cadastro-escolar.png": "/static/media/cadastro-escolar.d0c4dcf12f5c947e50b7.png",
+    "main.css": "/static/css/main.43bb8f23.css",
+    "main.js": "/static/js/main.9938c507.js",
+    "static/js/453.f4d220d9.chunk.js": "/static/js/453.f4d220d9.chunk.js",
     "static/media/avatar5.jpg": "/static/media/avatar5.e9b2317daae1ff12595c.jpg",
-    "static/media/e-commerce-frontend.png": "/static/media/e-commerce-frontend.31fae961d77f720cb54a.png",
     "static/media/renata.png": "/static/media/renata.7bfd183fd4016b4df836.png",
     "static/media/renata-santos-cv.pdf": "/static/media/renata-santos-cv.6b11b3f994149c19abdf.pdf",
     "static/media/whats-logo.png": "/static/media/whats-logo.c826b0165560636baf0b.png",
+    "static/media/typescript-icon.png": "/static/media/typescript-icon.af108db04a54d784da9b.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/index.html",
-    "main.104c23b0.css.map": "/static/css/main.104c23b0.css.map",
-    "main.ca5e39f3.js.map": "/static/js/main.ca5e39f3.js.map",
-    "453.66c5279e.chunk.js.map": "/static/js/453.66c5279e.chunk.js.map"
+    "main.43bb8f23.css.map": "/static/css/main.43bb8f23.css.map",
+    "main.9938c507.js.map": "/static/js/main.9938c507.js.map",
+    "453.f4d220d9.chunk.js.map": "/static/js/453.f4d220d9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.104c23b0.css",
-    "static/js/main.ca5e39f3.js"
+    "static/css/main.43bb8f23.css",
+    "static/js/main.9938c507.js"
   ]
 }

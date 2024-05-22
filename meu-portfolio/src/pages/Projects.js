@@ -13,14 +13,14 @@ const Projects = () => {
     {
       title: "OptimusTech",
       description: "Projeto corporativo focado em detalhes operacionais para otimizar o desempenho empresarial.",
-      githubUrl: "https://github.com/Re-Santos/optimustech",
+      githubUrl: "https://github.com/Re-Santos/optimus-tech",
       deployUrl: "http://www.optimustech-renata.surge.sh",
       technologies: ["HTML - CSS"]
     }, 
     {
       title: "Labecommerce API",
       description: "API para e-commerce que permite a gestão de produtos e usuários com funcionalidades completas de CRUD.",
-      githubUrl: "https://github.com/Re-Santos/labecommerce-api",
+      githubUrl: "https://github.com/Re-Santos/labecommerce-backend",
       deployUrl: "https://documenter.getpostman.com/view/28316428/2s9YJhvepq",
       technologies: ["Node.js - Express - PostgreSQL"]
     }, 
@@ -55,7 +55,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="bg-pink-200 p-8">
+    <section id="projects" className="bg-white p-8">
       <h2 className="text-3xl font-bold text-center">Projetos</h2>
       <div className="flex flex-wrap justify-center">
         {projects.map(project => (

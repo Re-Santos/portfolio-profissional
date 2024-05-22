@@ -3,10 +3,10 @@ import htmlIcon from '../assets/html-icon.png';
 import cssIcon from '../assets/css-icon.png';
 import jsIcon from '../assets/javascript-icon.png';
 import reactIcon from '../assets/react-icon.png';
-import tailwindIcon from '../assets/tailwind-icon.png';  // Assuma que o ícone está adicionado ao diretório de assets
-import nodeIcon from '../assets/node-icon.png';         // Assuma que o ícone está adicionado ao diretório de assets
-import gitIcon from '../assets/git-icon.png';           // Assuma que o ícone está adicionado ao diretório de assets
-import tsIcon from '../assets/typescript-icon.png';     // Assuma que o ícone está adicionado ao diretório de assets
+import tailwindIcon from '../assets/tailwind-icon.png';  
+import nodeIcon from '../assets/node-icon.png';         
+import gitIcon from '../assets/git-icon.png';           
+import tsIcon from '../assets/typescript-icon.png';   
 
 const Skills = () => {
   const skills = [
@@ -21,7 +21,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="bg-pink-200 p-8 text-center">
+    <section id="skills" className="bg-white p-8 text-center">
       <h2 className="text-3xl font-bold mb-6">Minhas Habilidades</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {skills.map((skill, index) => (
