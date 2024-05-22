@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <section id="home" className="flex h-screen relative">
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center bg-blue-500 text-center p-4" style={{ paddingTop: '18%' }}>
-        <h1 className="text-4xl font-bold text-white">Bem-vindo(a)<br />ao Meu Portfólio <span className="wave-hand">👋</span></h1>
+        <h1 className="text-4xl font-bold text-white">Bem-vindo(a)<br />ao Meu Portfólio <span className="wave-hand">👋🏾</span></h1>
       </div>
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center bg-purple-500 text-center p-4" style={{ paddingTop: '18%' }}>
         <h1 className="text-4xl font-bold">
